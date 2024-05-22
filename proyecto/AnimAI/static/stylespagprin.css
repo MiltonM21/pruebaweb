@@ -1,0 +1,43 @@
+body.inicio-page {
+    background-image: url("fondo_claro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para el modo claro */
+.inicio-page.light-mode {
+    background-image: url("fondo_claro.png");
+    color: black; /* Cambia el color del texto según sea necesario */
+}
+
+/* Estilos para el modo oscuro */
+.inicio-page.dark-mode {
+    background-image: url("fondo_oscuro.png");
+    color: white; /* Cambia el color del texto según sea necesario */
+}
+#toggleModeBtn {
+    border-radius: 50%; /* Hacer el botón circular */
+    width: 60px; /* Ajustar el ancho */
+    height: 60px; /* Ajustar la altura */
+    padding: 0; /* Eliminar el relleno interno */
+    overflow: hidden; /* Ocultar el texto */
+}
+
+#toggleModeBtn img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.overlay-bg {
+    background-color: rgba(135, 135, 135, 0.67); /* Fondo semitransparente blanco */
+    padding: 20px; /* Espacio alrededor del contenido */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.image-preview img {
+    max-width: 300px; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: 300px; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+    border: 1px solid #ccc; /* Opcional: añade un borde a la imagen */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra */
+}
